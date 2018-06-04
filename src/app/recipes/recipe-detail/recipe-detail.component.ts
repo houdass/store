@@ -18,7 +18,7 @@ export class RecipeDetailComponent implements OnInit {
   id: number;
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private store: Store<fromApp.AppState>) {}
+              private store: Store<fromRecipe.FeatureState>) {}
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
